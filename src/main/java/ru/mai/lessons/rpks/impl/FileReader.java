@@ -23,7 +23,7 @@ public class FileReader implements IFileReader {
       while ((s = b.readLine()) != null) {
         content.add(s);
       }
-    } catch(IOException e) {
+    } catch (IOException e) {
       throw new RuntimeException("loadContent error while reading file: " + filePath, e);
     }
 
